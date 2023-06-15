@@ -14,6 +14,7 @@ html {
 }
 
 .container {
+    flex-direction: column;
     width: 100%;
     height: 100vh;
 }
@@ -83,21 +84,9 @@ html {
 
 .section-button {
     position: absolute;
-    top: 50%;
-    left: 90%;
+    top: 90%;
+    left: 40%;
     transform: translate(-90%,-50%);
-}
-
-.section-button h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    margin: 0px;
-    line-height: 60px;
-    font-size: 4rem;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.08);
-    letter-spacing: 18px;
-    color: #3d3d3d;
-    text-transform: uppercase;
 }
 
 .section-button .btn {
@@ -349,3 +338,149 @@ html {
 .del {
     color: #bbb;
 }
+
+
+         /* footer  start */
+
+         .container {
+            max-width: 1170px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            bottom: 0;
+         }
+         
+         .row {
+            display: flex;
+            flex-wrap: wrap;
+         
+         }
+        
+        
+         .row ul {
+            list-style: none;
+         }
+         
+         .row ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #fff;
+            color: #bbb;
+            text-decoration: none;
+            display: block;
+            transition: all .3s ease;
+         }
+         
+         .row ul li a:hover {
+            text-decoration: underline;
+         }
+        
+         .row h2 {
+            color: #fff;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+         }
+         
+         footer {
+            background-color: #24262b;
+            padding: 70px 0;
+         }
+         
+         footer a:hover {
+            color: #fff;
+            padding-left: 8px;
+            text-decoration: underline;
+            transition: all .4s ease 0s;
+         }
+         
+         .row h2 {
+            color: #fff;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+         }
+         
+         .footer-col {
+            width: 25%;
+            padding: 0 15px;
+         }
+         
+         .footer-col h4 {
+            font-size: 18px;
+            color: #fff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+         }
+         
+         .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+         }
+         
+         .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+         }
+         
+         .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgb(255,255,255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #fff;
+            transition: all .5s ease;
+         }
+         
+         .footer-col .social-links a:hover {
+            color: #bbb;
+         }
+         
+         .row ul li a:hover {
+            text-decoration: underline #e91e63;
+         } 
+
+         .cr h2 {
+            font-size: 28px;
+         }
+        
+         
+         /* footer section close*/
+         @media(max-width:1280px) {
+            footer {
+                flex-direction: column;
+            }
+            h1 {
+                flex-direction: column;
+            }
+            h3 {
+                flex-direction: column;
+            }
+            p {
+                flex-direction: column;
+            }
+         }
+        
+        
+         @media (max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+         }
+         
+         @media (max-width: 767px) {
+            .footer-col {
+                width: 100%;
+            }
+         }
